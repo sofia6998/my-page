@@ -4,21 +4,39 @@
   align-items: center;
 }
 
-.pic {
-  width: 20rem;
-  height: 20rem;
+.imageContainer {
+  position: relative;
   border-radius: 3rem;
   transform: rotate(10deg);
-  object-fit: cover;
-  padding: 1rem;
   margin-right: 3rem;
   background: #e3474c;
   padding: 1rem;
   box-shadow: 4px 4px 15px 5px #2f3b57;
   transition: transform 0.1s ease-in;
+  cursor: pointer;
   &:hover {
     transform: rotate(0deg);
   }
+}
+
+.pic, .pic2 {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.pic2 {
+  position: absolute;
+  animation: pulse 7s ease-in infinite;
+}
+
+@keyframes pulse {
+  0% {opacity: 0;}
+  42% {opacity: 0;}
+  50% {opacity: 1;}
+  92% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 .info {
@@ -27,5 +45,26 @@
   .title {
     font-size: 20px;
     color: #e3474c;
+  }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pic, .pic2 {
+    width: unset;
+    height: unset;
+    max-width: 80vw;
+    max-height: 80vh;
   }
 }

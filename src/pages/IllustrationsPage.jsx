@@ -8,6 +8,8 @@ import sr4 from "../assets/sr4.png";
 import sr5 from "../assets/sr5.png";
 import sr6 from "../assets/sr6.png";
 import sr7 from "../assets/sr7.png";
+import itog1 from "../assets/itog1.png";
+import itog2 from "../assets/itog2.png";
 import IllustrationCard from "../components/card/IllustrationCard";
 
 export default function IllustrationsPage() {
@@ -15,6 +17,7 @@ export default function IllustrationsPage() {
         <div className={styles.container}>
             <MenuBarComponent/>
             <div className={styles.infoContainer}>
+                <IllustrationCard image={itog1} image2={itog2} title={"Me, Myself and I"}/>
                 <IllustrationCard image={sr1} title={"Blue-footed booby"} text={"Did you know that birds with blue legs exist? Maybe they are aliens..."}/>
                 <IllustrationCard image={sr3} title={"Lodi"} text={"My beloved dog watching fighter aircraft."}/>
                 <IllustrationCard image={sr7} title={"Some time"} text={"..."}/>

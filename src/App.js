@@ -9,7 +9,7 @@ import {BrowserRouter} from "react-router-dom";
 function App() {
   return (
       <div id="app">
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Route exact path="/" component={MainPage}/>
             <Route path="/illustrations" component={IllustrationsPage}/>
             <Route path="/about" component={AboutPage}/>
