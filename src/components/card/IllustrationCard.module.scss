@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.pic {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 3rem;
+  transform: rotate(10deg);
+  object-fit: cover;
+  padding: 1rem;
+  margin-right: 3rem;
+  background: #e3474c;
+  padding: 1rem;
+  box-shadow: 4px 4px 15px 5px #2f3b57;
+  transition: transform 0.1s ease-in;
+  &:hover {
+    transform: rotate(0deg);
+  }
+}
+
+.info {
+  color: white;
+  font-size: 12px;
+  .title {
+    font-size: 20px;
+    color: #e3474c;
+  }
+}

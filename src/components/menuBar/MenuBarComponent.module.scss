@@ -1,0 +1,21 @@
+.menuContainer {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 2%;
+  height: 5rem;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.link {
+  text-decoration: unset;
+  color: white;
+  font-weight: bold;
+  font-size: 24pt;
+  &.active {
+    color: #e3474c;
+  }
+}
