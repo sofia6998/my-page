@@ -13,12 +13,16 @@ export default function AboutPage() {
             <MenuBarComponent/>
             <div className={styles.infoContainer}>
                 <div className={styles.info}>
-                    <div>💁‍♀️   Sofia</div>
-                    <div>👧  21 y.o.</div>
-                    <div>🏠  Russia, Saint Petersburg</div>
-                    <div>🏫  ITMO University <br/></div>
-                    <div>📧  <a href="mailto:nag.sofia@gmail.com">nag.sofia@gmail.com</a></div>
-                    <div>💼  2 years at <a href="https://forasoft.com/">ForaSoft</a> as a developer</div>
+                    <div className={styles.red}>Frontend developer with a fullstack experience.</div>
+                    <br/>
+                    I like to apply my math knowledge to implement beautiful UI effects, animations and graphs.
+                    Also passionate about generative art and started to dig into data visualisation lately.
+                    <br/>
+                    <br/>
+                    In free time do sport activities and create different handmade stuff. Was engaged in winter sports(skiing, snowboarding) since 3 years old.
+                    <br/>
+                    <br/>
+                    Finished M. C. S. at <a href="https://en.itmo.ru/">ITMO University</a>.
                 </div>
                 <img  className={styles.image} src={me}/>
             </div>

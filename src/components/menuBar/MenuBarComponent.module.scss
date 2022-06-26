@@ -1,8 +1,19 @@
-.menuContainer {
+.social {
   display: flex;
   position: fixed;
   top: 0;
   right: 2%;
+  height: 5rem;
+  width: 120px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.menuContainer {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 2%;
   height: 5rem;
   width: 50%;
   align-items: center;
